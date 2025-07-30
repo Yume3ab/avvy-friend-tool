@@ -8,18 +8,19 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 255 251 235; /* Cream background */
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 100%;
+    --card: 255 255 255;
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 100%;
+    --popover: 255 255 255;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Avvy brand colors - Official Site Palette */
+    /* Avvy brand colors - Enhanced Luxury Palette */
     --primary: 46 100% 62%; /* Sunlight Yellow #FFD33F */
     --primary-foreground: 222.2 84% 4.9%;
+    --primary-glow: 46 100% 75%; /* Lighter glow variant */
 
     --secondary: 1 100% 78%; /* Coral Orange #FF8F8E */
     --secondary-foreground: 222.2 84% 4.9%;
@@ -28,10 +29,15 @@ All colors MUST be HSL.
     --accent: 348 100% 76%; /* Sakura Pink #FF849C */
     --accent-foreground: 222.2 84% 4.9%;
 
-    /* Gradient colors */
+    /* Premium gradient colors */
     --gradient-start: 46 100% 62%; /* #FFD33F */
     --gradient-middle: 1 100% 78%; /* #FF8F8E */
     --gradient-end: 348 100% 76%; /* #FF849C */
+    
+    /* New luxury gradients */
+    --gradient-luxury-start: 320 100% 85%; /* Light purple */
+    --gradient-luxury-middle: 46 100% 75%; /* Light yellow */
+    --gradient-luxury-end: 190 100% 80%; /* Light cyan */
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -43,7 +49,7 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -115,5 +121,51 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background: linear-gradient(135deg, hsl(var(--gradient-luxury-start)), hsl(var(--gradient-luxury-middle)), hsl(var(--gradient-luxury-end)));
+    background-attachment: fixed;
   }
+}
+
+/* Luxury animations and effects */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+  50% { box-shadow: 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--secondary) / 0.4); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.luxury-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.luxury-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  z-index: -1;
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)), hsl(var(--primary)));
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 3s ease-in-out infinite;
 }

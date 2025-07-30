@@ -21,28 +21,28 @@ const AboutAvvy = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-noto font-bold text-3xl md:text-4xl text-foreground mb-4">
+    <section id="about" className="py-24 bg-gradient-avvy-soft">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-20">
+          <h2 className="font-rounded font-black text-4xl md:text-5xl text-foreground mb-6">
             Avvyとは？
           </h2>
-          <p className="font-noto text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-rounded text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             次世代バーチャル配信プラットフォームで、クリエイターと配信者をつなぐ
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-card/80 backdrop-blur-sm">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <feature.icon className="w-8 h-8 text-primary" />
+            <Card key={index} className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-white/90 backdrop-blur-lg rounded-3xl hover:scale-105 group">
+              <CardContent className="p-10 text-center">
+                <div className="w-20 h-20 bg-gradient-avvy rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <feature.icon className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="font-noto font-bold text-xl text-foreground mb-4">
+                <h3 className="font-rounded font-black text-2xl text-foreground mb-6">
                   {feature.title}
                 </h3>
-                <p className="font-noto text-muted-foreground leading-relaxed">
+                <p className="font-rounded text-muted-foreground leading-relaxed text-lg">
                   {feature.description}
                 </p>
               </CardContent>

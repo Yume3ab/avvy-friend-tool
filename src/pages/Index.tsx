@@ -6,17 +6,19 @@ import RecruitmentDetails from "@/components/landing/RecruitmentDetails";
 import WorkflowSection from "@/components/landing/WorkflowSection";
 import BenefitsSection from "@/components/landing/BenefitsSection";
 import ApplicationForm from "@/components/landing/ApplicationForm";
+import FAQSection from "@/components/landing/FAQSection";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen font-noto">
+    <div className="min-h-screen font-rounded">
       <HeroSection />
       <AboutAvvy />
       <RecruitmentDetails />
       <WorkflowSection />
       <BenefitsSection />
       <ApplicationForm />
+      <FAQSection />
       <Footer />
     </div>
   );

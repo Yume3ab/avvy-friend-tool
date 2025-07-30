@@ -7,48 +7,86 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-background via-background to-accent/10 flex items-center justify-center overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-primary rounded-full"></div>
-        <div className="absolute top-40 right-32 w-24 h-24 bg-accent rounded-full"></div>
-        <div className="absolute bottom-32 left-1/3 w-40 h-40 bg-primary/30 rounded-full"></div>
-        <div className="absolute bottom-20 right-20 w-28 h-28 bg-accent/50 rounded-full"></div>
+    <section className="relative min-h-screen bg-gradient-avvy-soft flex items-center justify-center overflow-hidden">
+      {/* Animated Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-20 w-32 h-32 bg-primary rounded-full animate-pulse"></div>
+        <div className="absolute top-40 right-32 w-24 h-24 bg-secondary rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute bottom-32 left-1/3 w-40 h-40 bg-accent rounded-full animate-pulse delay-500"></div>
+        <div className="absolute bottom-20 right-20 w-28 h-28 bg-primary rounded-full animate-pulse delay-2000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-avvy rounded-full opacity-5 animate-pulse"></div>
       </div>
 
-      <div className="container mx-auto px-4 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-6 text-center relative z-10">
+        <div className="max-w-5xl mx-auto">
+          {/* Official Site Link */}
+          <div className="mb-8">
+            <Button 
+              asChild
+              variant="outline" 
+              size="sm"
+              className="font-rounded font-bold mb-4"
+            >
+              <a 
+                href="https://avvy.live/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center"
+              >
+                Avvy公式サイトを見る
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </div>
+
           {/* Main Headline */}
-          <h1 className="font-noto font-bold text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 leading-tight">
+          <h1 className="font-rounded font-black text-5xl md:text-7xl lg:text-8xl text-foreground mb-8 leading-tight">
             Avvyで、あなたの<br className="hidden md:inline" />
-            <span className="text-primary">イラストが世界中</span>の<br className="md:hidden" />
+            <span className="bg-gradient-avvy bg-clip-text text-transparent">イラストが世界中</span>の<br className="md:hidden" />
             配信者を彩る
           </h1>
 
           {/* Subheadline */}
-          <p className="font-noto text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="font-rounded text-xl md:text-3xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
             スポット案件から長期案件まで、<br className="md:hidden" />
             フリーランスイラストレーター大募集！
           </p>
 
-          {/* CTA Button */}
-          <Button 
-            onClick={scrollToForm}
-            size="lg" 
-            className="font-noto font-bold text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-          >
-            応募フォームへ
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <Button 
+              onClick={scrollToForm}
+              variant="gradient"
+              size="lg" 
+              className="font-rounded font-black text-xl px-12 py-6"
+            >
+              応募フォームへ
+              <ArrowRight className="ml-3 h-6 w-6" />
+            </Button>
+            <Button 
+              asChild
+              variant="outline" 
+              size="lg"
+              className="font-rounded font-bold"
+            >
+              <a 
+                href="#about" 
+                className="inline-flex items-center"
+              >
+                詳細を見る
+              </a>
+            </Button>
+          </div>
 
-          {/* Visual Elements - Placeholder for avatar assets collage */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 opacity-80">
+          {/* Enhanced Visual Elements */}
+          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
             {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
               <div 
                 key={i} 
-                className="aspect-square bg-gradient-to-br from-primary/10 to-accent/20 rounded-2xl border border-primary/20 backdrop-blur-sm flex items-center justify-center"
+                className="aspect-square bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 rounded-3xl border-2 border-white/50 backdrop-blur-lg flex items-center justify-center shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-3"
+                style={{ animationDelay: `${i * 0.1}s` }}
               >
-                <div className="w-8 h-8 bg-primary/30 rounded-full"></div>
+                <div className="w-12 h-12 bg-gradient-avvy rounded-full shadow-lg"></div>
               </div>
             ))}
           </div>

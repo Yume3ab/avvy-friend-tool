@@ -10,21 +10,26 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-noto font-bold text-3xl md:text-4xl text-foreground mb-4">
+    <section className="py-24 bg-background">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-20">
+          <h2 className="font-rounded font-black text-4xl md:text-5xl text-foreground mb-6">
             クリエイターのメリット
           </h2>
+          <p className="font-rounded text-lg text-muted-foreground">
+            Avvyで活躍するクリエイターの特典をご紹介
+          </p>
         </div>
         
-        <Card className="max-w-4xl mx-auto border border-primary/20 shadow-lg">
-          <CardContent className="p-8">
-            <div className="grid md:grid-cols-2 gap-6">
+        <Card className="max-w-5xl mx-auto border-0 shadow-2xl bg-gradient-avvy-soft rounded-3xl overflow-hidden">
+          <CardContent className="p-12">
+            <div className="grid md:grid-cols-2 gap-8">
               {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start">
-                  <Check className="w-6 h-6 text-primary mr-4 mt-1 flex-shrink-0" />
-                  <span className="font-noto text-foreground leading-relaxed">
+                <div key={index} className="flex items-start group">
+                  <div className="w-8 h-8 bg-gradient-avvy rounded-full flex items-center justify-center mr-6 mt-1 flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Check className="w-5 h-5 text-white" />
+                  </div>
+                  <span className="font-rounded text-foreground leading-relaxed text-lg font-medium">
                     {benefit}
                   </span>
                 </div>

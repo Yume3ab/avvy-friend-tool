@@ -20,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'noto': ['Noto Sans JP', 'sans-serif'],
+				'rounded': ['M PLUS Rounded 1c', 'Noto Sans JP', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -69,7 +70,14 @@ export default {
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				sm: 'calc(var(--radius) - 4px)',
+				'xl': '12px',
+				'2xl': '16px',
+				'3xl': '24px'
+			},
+			backgroundImage: {
+				'gradient-avvy': 'linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-middle)), hsl(var(--gradient-end)))',
+				'gradient-avvy-soft': 'linear-gradient(135deg, hsl(var(--gradient-start) / 0.1), hsl(var(--gradient-end) / 0.1))',
 			},
 			keyframes: {
 				'accordion-down': {

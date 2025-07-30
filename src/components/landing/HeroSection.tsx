@@ -39,18 +39,45 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Main Headline */}
-          <h1 className="font-rounded font-black text-5xl md:text-7xl lg:text-8xl text-foreground mb-8 leading-tight">
+          {/* Logo */}
+          <div className="mb-8">
+            <img 
+              src="/lovable-uploads/86617918-2fb0-4251-ba87-902f35e49bb3.png" 
+              alt="Avvy Logo" 
+              className="h-16 mx-auto mb-4"
+            />
+          </div>
+
+          {/* Main Headline - Reduced size */}
+          <h1 className="font-rounded font-black text-3xl md:text-5xl lg:text-6xl text-foreground mb-8 leading-tight">
             Avvyで、あなたの<br className="hidden md:inline" />
             <span className="bg-gradient-avvy bg-clip-text text-transparent">イラストが世界中</span>の<br className="md:hidden" />
             配信者を彩る
           </h1>
 
-          {/* Subheadline */}
-          <p className="font-rounded text-xl md:text-3xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
+          {/* Subheadline - Reduced size */}
+          <p className="font-rounded text-lg md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
             スポット案件から長期案件まで、<br className="md:hidden" />
             フリーランスイラストレーター大募集！
           </p>
+
+          {/* Feature Images */}
+          <div className="mb-12 flex flex-col md:flex-row justify-center items-center gap-8">
+            <div className="bg-white/20 backdrop-blur-lg rounded-3xl p-6 shadow-2xl">
+              <img 
+                src="/lovable-uploads/db384254-f6a8-4fae-802a-44fccb8289f4.png" 
+                alt="Avvy App Interface" 
+                className="h-48 object-contain rounded-2xl"
+              />
+            </div>
+            <div className="bg-white/20 backdrop-blur-lg rounded-3xl p-6 shadow-2xl">
+              <img 
+                src="/lovable-uploads/517f91a1-0694-453b-9a7c-8d3578090824.png" 
+                alt="Avvy Avatar Collection" 
+                className="h-48 object-contain rounded-2xl"
+              />
+            </div>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">

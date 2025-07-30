@@ -19,25 +19,6 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
-          {/* Official Site Link */}
-          <div className="mb-8">
-            <Button 
-              asChild
-              variant="outline" 
-              size="sm"
-              className="font-rounded font-bold mb-4"
-            >
-              <a 
-                href="https://avvy.live/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center"
-              >
-                Avvy公式サイトを見る
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-          </div>
 
           {/* Logo */}
           <div className="mb-8">
@@ -72,8 +53,8 @@ const HeroSection = () => {
             </div>
             <div className="bg-white/20 backdrop-blur-lg rounded-3xl p-6 shadow-2xl">
               <img 
-                src="/lovable-uploads/517f91a1-0694-453b-9a7c-8d3578090824.png" 
-                alt="Avvy Avatar Collection" 
+                src="/lovable-uploads/avvy-hero-background.png" 
+                alt="Avvy Characters Lineup" 
                 className="h-48 object-contain rounded-2xl"
               />
             </div>

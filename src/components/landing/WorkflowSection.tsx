@@ -89,13 +89,6 @@ const WorkflowSection = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center px-6 py-3 bg-accent/20 rounded-xl border border-accent/30">
-            <span className="font-noto text-sm text-accent-foreground">
-              💡 完全リモート対応で、世界中のクリエイターと協業
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -28,7 +28,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="font-rounded text-lg md:text-2xl text-white mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
+          <p className="font-rounded text-lg md:text-2xl text-black font-bold mb-12 max-w-4xl mx-auto leading-relaxed">
             スポット案件から長期案件まで、<br className="md:hidden" />
             フリーランスイラストレーター大募集！
           </p>

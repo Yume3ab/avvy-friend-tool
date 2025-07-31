@@ -4,9 +4,8 @@ import { Check } from "lucide-react";
 const BenefitsSection = () => {
   const benefits = [
     "世界中の VTuber・配信者に自分の絵が使われる",
-    "柔軟なスケジュール・完全リモート",
-    "高解像度データの実績公開 OK（リリース後）",
-    "継続発注で安定収入も可能"
+    "実績公開 OK（リリース後）",
+    "依頼ニーズに応じた柔軟なスケジュール・完全リモート"
   ];
 
   return (

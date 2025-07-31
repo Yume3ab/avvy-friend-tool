@@ -1,12 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Globe, Palette, Workflow } from "lucide-react";
+import { Globe, Palette, Sparkles } from "lucide-react";
 
 const AboutAvvy = () => {
   const features = [
     {
       icon: Globe,
       title: "世界展開中のサービス",
-      description: "2Dアバター生成アプリ + 配信／ガチャ機能を持つグローバルプラットフォーム"
+      description: "誰でもスマホ一台で簡単にVTuberになり配信活動ができる2Dアバターアプリ。グローバルで配信中"
     },
     {
       icon: Palette,
@@ -14,9 +14,9 @@ const AboutAvvy = () => {
       description: "衣装＆ギフトイラストを継続的に拡充。あなたの作品が世界中で愛用される"
     },
     {
-      icon: Workflow,
-      title: "最適化されたワークフロー",
-      description: "クリエイターが活躍しやすいオンライン制作環境を完備"
+      icon: Sparkles,
+            title: "VTuberファッション・トレンド最先端",
+            description: "あなたのクリエイティブで流行の最先端を築ける"
     }
   ];
 

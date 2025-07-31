@@ -25,7 +25,7 @@ const Footer = () => {
               </a>
             </Button>
           </div>
-          <p className="font-rounded text-lg mb-8 opacity-90">Avvy Art Team 連絡先: art@avvy.app</p>
+          
           <div className="flex justify-center space-x-8 text-base">
             <a href="#" className="hover:text-primary transition-colors font-rounded font-medium">プライバシーポリシー</a>
             <a href="#" className="hover:text-primary transition-colors font-rounded font-medium">利用規約</a>

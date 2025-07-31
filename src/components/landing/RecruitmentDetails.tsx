@@ -7,20 +7,32 @@ const RecruitmentDetails = () => {
     {
       icon: User,
       title: "アバター衣装・アクセサリ",
-      description: "Live2D/Spine 用パーツ分けイラスト",
-      tags: ["Live2D", "Spine", "パーツ分け"]
+      description: "制作衣装・アクセサリアイテムのデザイン制作",
+      tags: ["立ち絵三面図イラスト制作"]
+    },
+    {
+      icon: User,
+      title: "アバター衣装・アクセサリ",
+      description: "アニメーション用パーツ分け2Dイラスト制作",
+      tags: ["2Dイラスト"]
     },
     {
       icon: Gift,
       title: "配信中ギフト",
-      description: "静止画＋簡易アニメーション（PNG/PNGシーケンス）",
-      tags: ["アニメーション", "PNG", "エフェクト"]
+      description: "Avvy公式キャラSDや配信中ギフトのイラスト制作",
+      tags: ["2Dイラスト"]
     },
     {
       icon: Image,
-      title: "ガチャバナー・キービジュアル",
-      description: "SNS/アプリ用の横長・正方形素材",
-      tags: ["バナー", "SNS", "キービジュアル"]
+      title: "ガチャバナー・キービジュアル、配信背景画像",
+      description: "ガチャバナー用イラストやライバーの配信背景イラスト制作",
+      tags: ["バナー", "キービジュアル", "背景"]
+    },
+    {
+      icon: Image,
+      title: "VTuber素材",
+      description: "フォトフレーム/配信告知用フレーム・手などのVTuber素材のイラスト制作",
+      tags: ["フレーム", "手などの2D素材イラスト制作"]
     }
   ];
 
@@ -34,7 +46,7 @@ const RecruitmentDetails = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-gradient-to-br from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-noto font-bold text-3xl md:text-4xl text-foreground mb-4">

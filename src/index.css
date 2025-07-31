@@ -8,36 +8,36 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 255 251 235; /* Cream background */
+    --background: 0 0% 100%; /* Pure white background */
     --foreground: 222.2 84% 4.9%;
 
-    --card: 255 255 255;
+    --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 255 255 255;
+    --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Avvy brand colors - Enhanced Luxury Palette */
-    --primary: 46 100% 62%; /* Sunlight Yellow #FFD33F */
-    --primary-foreground: 222.2 84% 4.9%;
-    --primary-glow: 46 100% 75%; /* Lighter glow variant */
+    /* Avvy brand colors - Natural Palette */
+    --primary: 219 100% 56%; /* Royal Blue #1F7FFF */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 219 100% 70%; /* Lighter glow variant */
 
-    --secondary: 1 100% 78%; /* Coral Orange #FF8F8E */
-    --secondary-foreground: 222.2 84% 4.9%;
+    --secondary: 158 64% 52%; /* Emerald Green #4ADE80 */
+    --secondary-foreground: 0 0% 100%;
 
-    /* Sakura Pink accent */
-    --accent: 348 100% 76%; /* Sakura Pink #FF849C */
-    --accent-foreground: 222.2 84% 4.9%;
+    /* Purple accent */
+    --accent: 270 95% 75%; /* Soft Purple #B794F6 */
+    --accent-foreground: 0 0% 100%;
 
     /* Premium gradient colors */
-    --gradient-start: 46 100% 62%; /* #FFD33F */
-    --gradient-middle: 1 100% 78%; /* #FF8F8E */
-    --gradient-end: 348 100% 76%; /* #FF849C */
+    --gradient-start: 219 100% 56%; /* Royal Blue */
+    --gradient-middle: 158 64% 52%; /* Emerald Green */
+    --gradient-end: 270 95% 75%; /* Soft Purple */
     
     /* New luxury gradients */
-    --gradient-luxury-start: 320 100% 85%; /* Light purple */
-    --gradient-luxury-middle: 46 100% 75%; /* Light yellow */
-    --gradient-luxury-end: 190 100% 80%; /* Light cyan */
+    --gradient-luxury-start: 219 100% 56%; /* Royal Blue */
+    --gradient-luxury-middle: 158 64% 52%; /* Emerald Green */
+    --gradient-luxury-end: 270 95% 75%; /* Soft Purple */
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -79,23 +79,23 @@ All colors MUST be HSL.
     --popover-foreground: 210 40% 98%;
 
     /* Avvy brand colors for dark mode */
-    --primary: 46 95% 55%; /* Darker sunlight yellow */
-    --primary-foreground: 222.2 84% 4.9%;
+    --primary: 219 100% 50%; /* Darker royal blue */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 1 85% 65%; /* Darker coral orange */
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 158 64% 45%; /* Darker emerald green */
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    /* Darker sakura pink for dark mode */
-    --accent: 348 85% 65%;
-    --accent-foreground: 210 40% 98%;
+    /* Darker purple for dark mode */
+    --accent: 270 95% 65%;
+    --accent-foreground: 0 0% 100%;
 
     /* Gradient colors for dark mode */
-    --gradient-start: 46 95% 55%;
-    --gradient-middle: 1 85% 65%;
-    --gradient-end: 348 85% 65%;
+    --gradient-start: 219 100% 50%;
+    --gradient-middle: 158 64% 45%;
+    --gradient-end: 270 95% 65%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;

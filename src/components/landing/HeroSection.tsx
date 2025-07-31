@@ -22,9 +22,9 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto">
 
           {/* Main Headline with White Text */}
-          <h1 className="font-rounded font-black text-4xl md:text-6xl lg:text-8xl text-white mb-8 leading-tight drop-shadow-2xl">
+          <h1 className="font-rounded font-black text-5xl md:text-7xl lg:text-9xl mb-8 leading-tight bg-gradient-avvy bg-clip-text text-transparent drop-shadow-none">
             <span className="block mb-4">Avvyで、あなたの</span>
-            <span className="block text-5xl md:text-7xl lg:text-9xl mb-4 bg-gradient-avvy bg-clip-text text-transparent drop-shadow-none">
+            <span className="block mb-4">
               イラストが世界中
             </span>
             <span className="block">の配信者を彩る</span>

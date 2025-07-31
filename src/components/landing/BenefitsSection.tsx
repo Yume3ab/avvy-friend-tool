@@ -28,7 +28,7 @@ const BenefitsSection = () => {
           </p>
         </div>
         
-        <div className="max-w-6xl mx-auto luxury-card rounded-3xl shadow-2xl overflow-hidden relative" style={{animation: 'glow 6s ease-in-out infinite'}}>
+        <div className="max-w-4xl mx-auto luxury-card rounded-3xl shadow-2xl overflow-hidden relative" style={{animation: 'glow 6s ease-in-out infinite'}}>
           <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-white/90 to-white/85"></div>
           
           <CardContent className="p-16 relative z-10">

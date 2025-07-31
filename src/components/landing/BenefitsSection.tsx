@@ -32,7 +32,7 @@ const BenefitsSection = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-white/90 to-white/85"></div>
           
           <CardContent className="p-16 relative z-10">
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 gap-12">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start group relative" style={{animation: `fade-in 0.6s ease-out ${index * 0.2}s both`}}>
                   <div className="w-12 h-12 bg-gradient-to-r from-primary via-secondary to-accent rounded-full flex items-center justify-center mr-8 mt-2 flex-shrink-0 shadow-2xl group-hover:scale-125 transition-all duration-500 relative overflow-hidden" style={{animation: 'glow 3s ease-in-out infinite'}}>

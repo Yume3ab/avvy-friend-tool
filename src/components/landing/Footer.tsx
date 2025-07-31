@@ -6,13 +6,12 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-foreground via-foreground to-foreground text-background py-16">
       <div className="container mx-auto px-6">
         <div className="text-center">
-          <h3 className="font-rounded font-black text-2xl mb-6">AnotherBall Pte. Ltd.</h3>
           <div className="mb-6">
             <Button 
               asChild
-              variant="outline" 
-              size="sm"
-              className="font-rounded font-bold border-background/30 text-background hover:bg-background/20"
+              variant="gradient"
+              size="lg" 
+              className="font-rounded font-black text-xl px-12 py-6"
             >
               <a 
                 href="https://avvy.live/" 
@@ -29,6 +28,9 @@ const Footer = () => {
           <div className="flex justify-center space-x-8 text-base">
             <a href="#" className="hover:text-primary transition-colors font-rounded font-medium">プライバシーポリシー</a>
             <a href="#" className="hover:text-primary transition-colors font-rounded font-medium">利用規約</a>
+          </div>
+          <div className="mt-4">
+            <a href="https://anotherball.com/" className="hover:text-primary transition-colors font-rounded font-medium text-base">AnotherBall Pte. Ltd.</a>
           </div>
           <div className="mt-8 pt-8 border-t border-background/20">
             <p className="font-rounded text-sm opacity-70">© 2024 AnotherBall Pte. Ltd. All rights reserved.</p>

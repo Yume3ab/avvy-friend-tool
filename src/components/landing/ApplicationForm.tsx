@@ -42,12 +42,12 @@ const ApplicationForm = () => {
                   className="font-rounded font-black text-xl px-12 py-6"
                 >
                   <a 
-                    href="https://forms.google.com/placeholder" 
+                    href="https://docs.google.com/forms/d/1CdlssqXaHodR--gFOrZNsxRoXgLL_2VdoazGYfukecE/edit" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center"
                   >
-                    Google フォームで応募する
+                    応募する
                     <ExternalLink className="ml-3 h-6 w-6" />
                   </a>
                 </Button>

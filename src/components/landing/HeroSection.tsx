@@ -20,14 +20,6 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
-          {/* Logo */}
-          <div className="mb-8">
-            <img 
-              src="/lovable-uploads/86617918-2fb0-4251-ba87-902f35e49bb3.png" 
-              alt="Avvy Logo" 
-              className="h-16 mx-auto mb-4"
-            />
-          </div>
 
           {/* Main Headline with White Text */}
           <h1 className="font-rounded font-black text-4xl md:text-6xl lg:text-8xl text-white mb-8 leading-tight drop-shadow-2xl">
@@ -57,9 +49,9 @@ const HeroSection = () => {
             </Button>
             <Button 
               asChild
-              variant="outline" 
-              size="lg"
-              className="font-rounded font-bold border-white text-white hover:bg-white hover:text-foreground"
+              variant="gradient"
+              size="lg" 
+              className="font-rounded font-black text-xl px-12 py-6"
             >
               <a 
                 href="#about" 

@@ -23,11 +23,8 @@ const HeroSection = () => {
 
           {/* Main Headline with White Text */}
           <h1 className="font-rounded font-black text-5xl md:text-7xl lg:text-9xl mb-8 leading-tight bg-gradient-avvy bg-clip-text text-transparent drop-shadow-none">
-            <span className="block mb-4">Avvyで、あなたの</span>
-            <span className="block mb-4">
-              イラストが世界中
-            </span>
-            <span className="block">の配信者を彩る</span>
+            <span className="block mb-4">あなたのイラストが</span>
+            <span className="block">世界中の配信者を彩る</span>
           </h1>
 
           {/* Subheadline */}

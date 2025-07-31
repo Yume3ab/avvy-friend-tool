@@ -15,7 +15,7 @@ const HeroSection = () => {
           alt="Avvy Characters Lineup" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">

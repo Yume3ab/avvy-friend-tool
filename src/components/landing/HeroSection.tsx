@@ -15,14 +15,14 @@ const HeroSection = () => {
           alt="Avvy Characters Lineup" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-white/60"></div>
+        <div className="absolute inset-0 bg-white/75"></div>
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
 
           {/* Main Headline with White Text */}
-          <h1 className="font-rounded font-black text-4xl md:text-6xl lg:text-7xl mb-8 pt-16 leading-tight bg-gradient-avvy bg-clip-text text-transparent drop-shadow-lg" style={{WebkitTextStroke: '1px black'}}>
+          <h1 className="font-rounded font-black text-5xl md:text-7xl lg:text-8xl mb-8 pt-16 leading-tight bg-gradient-avvy bg-clip-text text-transparent drop-shadow-2xl" style={{WebkitTextStroke: '1px black'}}>
             <span className="block mb-4">あなたのイラストが</span>
             <span className="block">世界中の配信者を彩る</span>
           </h1>

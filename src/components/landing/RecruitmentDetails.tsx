@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { User, Gift, Image, Palette, FileText } from "lucide-react";
+import { User, Gift, Image, Palette, FileText, Video } from "lucide-react";
 
 const RecruitmentDetails = () => {
   const recruitmentItems = [
@@ -33,6 +33,12 @@ const RecruitmentDetails = () => {
       title: "VTuber素材",
       description: "フォトフレーム/配信告知用フレーム・手などのVTuber素材のイラスト制作",
       tags: ["フレーム", "手などの2D素材イラスト制作"]
+    },
+    {
+      icon: Video,
+      title: "アニメーション素材",
+      description: "ギフトや動画広告コンテンツにおいて、AfterEffectsなどを使ったモーショングラフィックス/エフェクトアニメーション制作",
+      tags: ["AfterEffects", "アニメーション", "モーショングラフィックス", "動画コンテンツ"]
     }
   ];
 

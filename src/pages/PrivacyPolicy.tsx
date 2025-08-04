@@ -113,7 +113,7 @@ const PrivacyPolicy = () => {
 
             <div className="text-center mt-12 pt-8 border-t border-border">
               <p className="text-sm text-muted-foreground font-rounded">
-                【制定：2025年8/4】
+                【制定：2025年8月4日】
               </p>
             </div>
           </div>

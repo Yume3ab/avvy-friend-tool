@@ -1,7 +1,23 @@
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background py-16">
       <div className="container mx-auto px-6 max-w-4xl">
+        <div className="mb-6">
+          <Button 
+            asChild
+            variant="outline" 
+            size="lg"
+            className="font-rounded font-medium"
+          >
+            <a href="/" className="inline-flex items-center">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              ホームに戻る
+            </a>
+          </Button>
+        </div>
         <div className="bg-card rounded-3xl p-8 shadow-lg">
           <h1 className="text-3xl font-rounded font-black text-center mb-8 text-foreground">
             プライバシーポリシー

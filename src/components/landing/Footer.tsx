@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           
           <div className="flex justify-center text-base">
-            <a href="#" className="hover:text-primary transition-colors font-rounded font-medium">プライバシーポリシー</a>
+            <a href="/privacy" className="hover:text-primary transition-colors font-rounded font-medium">プライバシーポリシー</a>
           </div>
           <div className="mt-4">
             <a href="https://anotherball.com/" className="hover:text-primary transition-colors font-rounded font-medium text-base">AnotherBall Pte. Ltd.</a>
